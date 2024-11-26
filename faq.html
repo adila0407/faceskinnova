@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Product FAQ - Budget-Friendly Guide</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px;
+            background-color: #f1f1f1;
+            border-bottom: 2px solid #ddd;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        header p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .faq {
+            margin: 20px 0;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h2 {
+            font-size: 1.2em;
+            color: #2d3a3a;
+            cursor: pointer;
+            padding: 15px;
+            background-color: #f7f7f7;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .faq-item h2:hover {
+            background-color: #e2e2e2;
+        }
+
+        .faq-item p {
+            padding: 15px;
+            background-color: #fafafa;
+            display: none;
+            border-top: 1px solid #ddd;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            border-top: 2px solid #ddd;
+            margin-top: 30px;
+        }
+
+        footer p {
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Answers to help you choose the right skincare products on a budget!</p>
+    </header>
+
+    <main>
+        <section class="faq">
+            <div class="faq-item">
+                <h2>1. How can I start a skincare routine with a low budget?</h2>
+                <p>Start with the basics: a gentle cleanser, a moisturizer, and sunscreen. These are the essential products that will give you the most benefit without breaking the bank. Look for affordable brands that offer multi-use products or those that combine key ingredients, such as moisturizer with SPF.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>2. Are drugstore skincare products effective?</h2>
+                <p>Yes! Many drugstore skincare products are formulated with high-quality ingredients and can work just as well as high-end brands. Focus on products with simple, effective ingredients, and always check for key elements like hydration and protection (e.g., hyaluronic acid and SPF).</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>3. What are the most important products to buy for a beginner?</h2>
+                <p>If you're just starting, prioritize a gentle cleanser, a good moisturizer, and sunscreen. These three products will cover your basic skincare needs. Once you’re comfortable with your routine, you can consider adding serums or exfoliants for more specific concerns.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>4. How can I get the most out of my budget skincare products?</h2>
+                <p>To maximize your budget, use products that serve more than one purpose (like a moisturizer with SPF), and always check ingredient lists for essentials. Use the right amount of product—more isn’t always better—and follow a consistent routine to see results without needing to purchase additional products.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>5. How do I know if a budget product will suit my skin type?</h2>
+                <p>When shopping on a budget, it's important to read reviews and ingredient lists carefully. Look for products labeled for your specific skin type (oily, dry, combination, etc.). You can also patch-test products on a small area of your skin to ensure compatibility before using them on your whole face.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>6. Are there any budget-friendly skincare brands that you recommend?</h2>
+                <p>Yes, some trusted budget-friendly skincare brands include The Ordinary, Neutrogena, CeraVe, and La Roche-Posay. These brands offer effective products with high-quality ingredients at affordable prices, especially for beginners.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>7. How do I choose the right sunscreen on a budget?</h2>
+                <p>Look for a broad-spectrum sunscreen with SPF 30 or higher. Many affordable brands, like Neutrogena and Banana Boat, offer great options that protect your skin from both UVA and UVB rays without breaking the bank.</p>
+            </div>
+
+            <div class="faq-item">
+                <h2>8. Can I skip certain products to save money?</h2>
+                <p>Yes, initially you can skip certain products like serums or toners if you're on a tight budget. However, always keep your skincare routine simple and prioritize the basics: cleanser, moisturizer, and sunscreen. As your skincare needs grow, you can slowly add more products within your budget.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Face Skin Nova | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        // JavaScript for collapsible FAQ
+        const faqItems = document.querySelectorAll('.faq-item h2');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const answer = item.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
